@@ -6,8 +6,8 @@
 
 table.scacchiera td{
     border: solid 1px gray;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     
 }
 
@@ -15,13 +15,14 @@ table.scacchiera td{
 table:nth-child(1) tr:hover td:hover{
     background-color: black;
     /*Agisce sul bordo esterno*/
-    outline: solid 12px red;
+    outline: solid 6px red;
 }
 
-table:nth-child(2) tr:hover td:hover{
+table:nth-child(2) tr:nth-child(2n):hover td:nth-child(2n+1):hover,
+table:nth-child(2) tr:nth-child(2n+1):hover td:nth-child(2n):hover{
     background-color: red;
     border-radius: 50%;
-}
+}   
 
 table.scacchiera{
     border: solid 1px gray;

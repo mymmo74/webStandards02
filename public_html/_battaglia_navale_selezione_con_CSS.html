@@ -9,11 +9,30 @@ and open the template in the editor.
         <title>Battaglia navale</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--foglio di stile esterno-->
-        <link href="battaglia_navale_hover.css" rel="stylesheet" type="text/css"/>
+        <style>
+            table{
+                border: solid 1px black;
+                border-collapse: collapse;
+            }
+            td{
+                width: 40px;
+                height: 40px;
+            }
+            /*selezione a scacchiera*/
+            table#car1 tr:nth-child(2n) td:nth-child(2n+1),
+            table#car1 tr:nth-child(2n+1) td:nth-child(2n){
+                background-color: black;
+            }
+            table#car1 tr:nth-child(2n):hover td:nth-child(2n+1):hover,
+            table#car1 tr:nth-child(2n+1):hover td:nth-child(2n):hover{
+                background-color: red;
+                border-radius: 50%;
+            }
+            
+        </style>
     </head>
     <body>
-        <table class="scacchiera">
+        <table id="car1">
             <tr>
                 <td></td>
                 <td></td>
@@ -135,129 +154,5 @@ and open the template in the editor.
                 <td></td>
             </tr>
         </table>
-        <table class="scacchiera">
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <div id="blocco1"></div>
-        <div id="blocco2"></div>
     </body>
 </html>

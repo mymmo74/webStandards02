@@ -8,7 +8,7 @@ ol li:hover{
     color: gray;
 }
 ol li{
-    cursor: pointer;
+    cursor:  crosshair;
     font-weight: bold;
     font-size: 30px;
     width: 200px;

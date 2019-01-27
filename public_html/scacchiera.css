@@ -13,7 +13,7 @@ td{
     height: 50px;
     font-size: 40px;
     text-align: center;
-    color: red;
+    color: black;
 }
 
 th{
@@ -26,4 +26,11 @@ table tr:nth-child(2n+1) td:nth-child(2n),
 table tr:nth-child(2n) td:nth-child(2n+1)
 {
     background-color: gray;
+}
+
+table tr:nth-child(3):hover td:nth-child(5):hover{
+    cursor: pointer;
+    color: green;
+    background-color: red;
+    
 }
